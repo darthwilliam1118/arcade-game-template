@@ -14,8 +14,8 @@ class MainMenuView(_AGFMainMenu):
         super().__init__()
         self._manager = manager
 
-    def music_track(self) -> str:
-        return "menu"  # update once you add a menu music track
+    def music_track(self) -> str | None:
+        return None  # set to your track key once you add menu music
 
     def on_start_1p(self) -> None:
         from src.{{cookiecutter.project_slug}}.state import GameState
