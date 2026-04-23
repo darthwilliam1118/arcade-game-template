@@ -3,6 +3,9 @@
     "allow": [
       "Read(//c/Users/darth/Code/arcade-game-framework/**)",
       "Bash(grep \"^C:\\\\\\\\Users\\\\\\\\darth\\\\\\\\Code\\\\\\\\arcade-game-framework\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\darth\\Code\\arcade-game-framework\\src\\agf\\background"
     ]
   }
 }

@@ -22,7 +22,7 @@ class GameWindow(GameWindowBase):
 
         self.music.set_volume(cfg.music_volume)
 
-        self._manager = GameStateManager(self)
+        self._manager = GameStateManager(self, GameState.SPLASH)
         self._manager.transition(GameState.SPLASH)
 
 

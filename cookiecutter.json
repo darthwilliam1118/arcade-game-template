@@ -5,7 +5,7 @@
     "author_name": "Your Name",
     "github_username": "yourusername",
     "python_version": "3.14",
-    "agf_version": "v0.1.0",
+    "agf_version": "v0.1.1",
     "window_height": 800,
     "aspect_ratio": "1.25",
     "num_lives": 3,
