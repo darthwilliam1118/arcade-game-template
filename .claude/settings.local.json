@@ -5,7 +5,8 @@
       "Bash(grep \"^C:\\\\\\\\Users\\\\\\\\darth\\\\\\\\Code\\\\\\\\arcade-game-framework\")"
     ],
     "additionalDirectories": [
-      "C:\\Users\\darth\\Code\\arcade-game-framework\\src\\agf\\background"
+      "C:\\Users\\darth\\Code\\arcade-game-framework\\src\\agf\\background",
+      "C:\\Users\\darth\\Code\\arcade-game-framework\\src\\agf"
     ]
   }
 }

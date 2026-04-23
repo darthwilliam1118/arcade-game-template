@@ -109,7 +109,7 @@ class RunLevelView(arcade.View):
             return
 
         # Debug shortcuts — remove when real level is implemented
-        if key == arcade.key.W and (modifiers & arcade.key.MOD_SHIFT):
+        if key == arcade.key.W:
             self._manager.transition(GameState.LEVEL_COMPLETE)
             return
         if key == arcade.key.L:

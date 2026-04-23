@@ -23,7 +23,7 @@ class PlaceholderLevel(BaseLevel):
         self._h = window_height
         self._label = arcade.Text(
             "REPLACE THIS WITH YOUR GAME LOGIC\n"
-            "W = win level   L = lose a life",
+            "W = complete level    L = lose a life",
             x=window_width / 2,
             y=window_height / 2,
             color=arcade.color.WHITE,
