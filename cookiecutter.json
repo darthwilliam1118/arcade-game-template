@@ -1,0 +1,13 @@
+{
+    "project_name": "My Arcade Game",
+    "project_slug": "my_arcade_game",
+    "game_title": "My Arcade Game",
+    "author_name": "Your Name",
+    "github_username": "yourusername",
+    "python_version": "3.14",
+    "agf_version": "v0.1.0",
+    "window_height": 800,
+    "aspect_ratio": "1.25",
+    "num_lives": 3,
+    "starting_level": 1
+}
