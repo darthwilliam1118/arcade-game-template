@@ -15,8 +15,8 @@ class ScoreEntryView(_AGFScoreEntry):
         super().__init__(on_complete=self._on_complete)
 
     def get_high_score_table(self):
-        from agf.high_scores import HighScoreTable
-        return HighScoreTable.load()
+        from agf.high_scores import HighScoreTable, scores_path
+        return HighScoreTable.load(scores_path())
 
     def get_all_players(self):
         return self._manager.context.get("players", [])
