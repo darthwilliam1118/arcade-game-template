@@ -28,10 +28,10 @@ Answer the prompts and a new project folder is generated, ready to run.
 ```bash
 cd your_project_slug
 git init && git add -A && git commit -m "Initial commit from template"
-python -m venv venv
-venv\Scripts\activate        # Windows
+python -m venv .venv
+.venv\Scripts\activate       # Windows
 pip install -e ".[dev]"
-python main.py               # should launch immediately
+python main.py               # use "python" not "py" — py bypasses the venv on Windows
 ```
 
 Replace `src/your_slug/levels/placeholder_level.py` with your game logic.

@@ -9,10 +9,10 @@ A 2D arcade game built with Python and
 Download the latest release exe from the Releases page, or run from source:
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+python -m venv .venv
+.venv\Scripts\activate
 pip install -e ".[dev]"
-python main.py
+python main.py        # use "python", not "py" — py bypasses the venv on Windows
 ```
 
 ## Development
