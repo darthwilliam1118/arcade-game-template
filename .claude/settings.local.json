@@ -3,7 +3,9 @@
     "allow": [
       "Read(//c/Users/darth/Code/arcade-game-framework/**)",
       "Bash(grep \"^C:\\\\\\\\Users\\\\\\\\darth\\\\\\\\Code\\\\\\\\arcade-game-framework\")",
-      "PowerShell(& \"C:\\\\Users\\\\darth\\\\Code\\\\test_game\\\\.venv\\\\Scripts\\\\python.exe\" -m pip list 2>&1)"
+      "PowerShell(& \"C:\\\\Users\\\\darth\\\\Code\\\\test_game\\\\.venv\\\\Scripts\\\\python.exe\" -m pip list 2>&1)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\darth\\\\Code\\\\arcade-game-template\" -Recurse -Directory)",
+      "Bash(Select-Object -First 20 FullName)"
     ],
     "additionalDirectories": [
       "C:\\Users\\darth\\Code\\arcade-game-framework\\src\\agf\\background",

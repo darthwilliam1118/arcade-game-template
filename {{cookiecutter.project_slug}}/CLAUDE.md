@@ -21,6 +21,7 @@ Do NOT re-implement anything already in agf.
 - agf.events.GameEvent         — base game events
 - agf.high_scores              — HighScoreTable persistence
 - agf.music.MusicPlayer        — music management
+- agf.sound_manager.SoundManager — per-sfx playback throttle
 - agf.levels.base_level        — BaseLevel abstract interface
 - agf.powerups                 — PowerUpManager, effect categories
 - agf.ui                       — HUDBase, ScorePopup, text_utils

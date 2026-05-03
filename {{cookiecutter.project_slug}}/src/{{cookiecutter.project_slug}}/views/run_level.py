@@ -9,6 +9,10 @@ from typing import TYPE_CHECKING, Optional
 import arcade
 from agf.ui.text_utils import FONT_MAIN
 
+# Sound effects — uncomment when adding sfx:
+# from agf.paths import resource_path
+# from agf.sound_manager import SoundManager
+
 if TYPE_CHECKING:
     from src.{{cookiecutter.project_slug}}.state import GameStateManager
 
@@ -33,6 +37,7 @@ class RunLevelView(arcade.View):
         ctx = self._manager.context
         cfg = ctx.get("config")
         scale = cfg.sprite_scale if cfg else 1.0
+        self._cfg = cfg
 
         self._level = ctx.get("current_level")
         self._ship = PlayerShip(
@@ -42,6 +47,12 @@ class RunLevelView(arcade.View):
         players = ctx.get("players", [])
         self._hud = HUD(self.window.width, self.window.height,
                         len(players))
+
+        # Sound effects example — load each sound once, wrap in a
+        # SoundManager (one per sound type) to throttle simultaneous
+        # playbacks. Uncomment and adapt:
+        # self._snd_hit = arcade.Sound(resource_path("assets/sounds/hit.wav"))
+        # self._sm_hit = SoundManager(max_simultaneous=3)
 
     def on_show_view(self) -> None:
         arcade.set_background_color(arcade.color.BLACK)
@@ -58,6 +69,9 @@ class RunLevelView(arcade.View):
         if self._ship:
             self._ship.apply_movement(self._keys_held, delta_time)
             self._ship.update(delta_time)
+
+        # Example sfx playback — pass effects_volume (0-100) as 0.0-1.0:
+        # self._sm_hit.play(self._snd_hit, volume=self._cfg.effects_volume / 100)
 
         if self._level:
             events = self._level.update(delta_time, self._ship)
